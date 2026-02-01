@@ -45,11 +45,11 @@ const Footer = ({ hideFeatures }) => {
                         <a href="mailto:javaria.y2b@gmail.com">javaria.y2b@gmail.com</a>
                     </div>
                     <div className={styles.socials}>
-                        <a href="#"><img src={require('../assets/images/social/facebook.png')} alt="Facebook" /></a>
-                        <a href="#"><img src={require('../assets/images/social/instagram.png')} alt="Instagram" /></a>
-                        <a href="#"><img src={require('../assets/images/social/twitter.png')} alt="Twitter" /></a>
-                        <a href="#"><img src={require('../assets/images/social/linkedin.png')} alt="LinkedIn" /></a>
-                        <a href="#"><img src={require('../assets/images/social/youtube.png')} alt="YouTube" /></a>
+                        <a href="https://www.facebook.com/usclavalab/"><img src={require('../assets/images/social/facebook.png')} alt="Facebook" /></a>
+                        <a href="https://www.instagram.com/usclavalab/?hl=en"><img src={require('../assets/images/social/instagram.png')} alt="Instagram" /></a>
+                        <a href="https://x.com/usclavalab"><img src={require('../assets/images/social/twitter.png')} alt="Twitter" /></a>
+                        <a href="https://www.linkedin.com/company/usclavalab/"><img src={require('../assets/images/social/linkedin.png')} alt="LinkedIn" /></a>
+                        <a href="https://www.youtube.com/@usclavalab"><img src={require('../assets/images/social/youtube.png')} alt="YouTube" /></a>
                     </div>
                 </div>
                 <div className={styles.copyright}>
