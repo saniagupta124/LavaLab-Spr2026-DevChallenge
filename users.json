@@ -1,0 +1,20 @@
+[
+  {
+    "email": "saniagup@usc.edu",
+    "password": "$2b$10$mucFONrMKcNWpYk3ZJX3x.owZG4lqJ1TCNFXClo36SsRkc3wWF5cy",
+    "firstName": "Sania",
+    "lastName": "Gupta",
+    "cart": [
+      {
+        "id": 3,
+        "name": "HAVIT HV-G92 Gamepad",
+        "price": 160,
+        "rating": 5,
+        "reviews": 88,
+        "category": "new",
+        "quantity": 1
+      }
+    ],
+    "likes": []
+  }
+]

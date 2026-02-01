@@ -1,0 +1,177 @@
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.panelTitle {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.closeButton {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.closeButton:hover { color: #000; }
+
+.panelContent { 
+  padding: 32px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.userInfo h3 {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.userEmail {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.quickLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.linkButton {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.logoutButton {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  width: 100%;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logoutButton:hover { background: #dc2626; }
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form h3 {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.input {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.input:disabled {
+  background: #f9fafb;
+  color: #6b7280;
+}
+
+.error {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  color: #dc2626;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.submitButton {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  width: 100%;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitButton:hover { background: #333; }
+
+.backButton {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    width: 100%;
+    background: none;
+    color: #6b7280;
+    border: 1px solid #d1d5db;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.2s ease;
+}
+
+    .backButton:hover {
+        background: #f3f4f6;
+        border-color: #000;
+        color: #000;
+    }
+
+.passwordWrapper {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+    .passwordWrapper .input {
+        margin-bottom: 0;
+        padding-right: 48px;
+    }
+
+.eyeButton {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b7280;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+    .eyeButton:hover {
+        color: #000;
+    }

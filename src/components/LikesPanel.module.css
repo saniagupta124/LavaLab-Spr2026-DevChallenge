@@ -1,0 +1,135 @@
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.panelTitle {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+.closeButton {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.closeButton:hover { color: #000; }
+
+.panelContent {
+  padding: 32px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b7280;
+}
+
+.emptyState h3 {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.emptyState p {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.primaryButton {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.likesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.likeItem {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+}
+
+.removeLike {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #dc2626;
+}
+
+.removeLike:hover { background: #fef2f2; }
+
+.itemImage {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.itemInfo { margin-bottom: 12px; }
+
+.itemName {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemPrice {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.addToCartBtn {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  width: 100%;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addToCartBtn:hover { background: #333; }

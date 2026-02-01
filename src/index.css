@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Font family classes for easy application */
+.font-cabinet { font-family: 'Cabinet Grotesk', sans-serif; }
+.font-teko { font-family: 'Teko', sans-serif; }
+.font-space { font-family: 'Space Grotesk', sans-serif; }
+.font-poppins { font-family: 'Poppins', sans-serif; }

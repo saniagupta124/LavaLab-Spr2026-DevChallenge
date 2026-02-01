@@ -1,0 +1,175 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: visible;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.discountBadge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #DB4444;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 2;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.likeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.likeButton:hover {
+    transform: scale(1.2);
+}
+
+.likeButton.liked {
+    background: none;
+}
+
+.likeIcon {
+  width: 23px;
+  height: 22px;
+}
+
+.imageContainer {
+  position: relative;
+  padding: 0px 0px;
+  background: #e8e8e8;
+  aspect-ratio: 4/3.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border-radius: 8px 8px 0 0;
+}
+
+.imageContainer.hovered {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.productImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.addToCartButton {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: white;
+  border: none;
+  padding: 12px 96.5px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: slideUp 0.3s ease;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+
+.addToCartButton:hover {
+  background: #333;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.productInfo {
+    padding: 16px;
+    background: #F4F4F4;
+    border-radius: 0 0 8px 8px;
+}
+
+.productName {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+.originalPrice {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+}
+
+.reviewCount {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}

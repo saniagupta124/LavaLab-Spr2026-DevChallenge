@@ -1,0 +1,104 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #F4F4F4;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.logoLink {
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  filter: invert(1);
+}
+
+.categories {
+  display: flex;
+  gap: 40px;
+}
+
+.category {
+  background: none;
+  border: none;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.category.active {
+  font-weight: 700;
+}
+
+.rightSection {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.iconButton:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: auto;
+  height: 24px;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #000;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 15px 20px;
+  }
+  
+  .categories {
+    display: none;
+  }
+}

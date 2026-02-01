@@ -1,0 +1,125 @@
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 80px 120px;
+    padding-top: 0;
+    background: #F4F4F4;
+    border-top: none;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.features::before {
+    content: '';
+    display: block;
+    grid-column: 1 / -1;
+    width: 95%;
+    height: 3px;
+    background: #e5e7eb;
+    margin: 0 auto 80px;
+}
+
+.feature { text-align: center; }
+
+.featureIcon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 30px;
+    background: #B9B9B9;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .featureIcon img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+.feature h3 {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.feature p {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.footer {
+  background: #2d2d2d;
+  color: white;
+  padding: 60px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.footerLogo {
+  height: 40px;
+  margin-bottom: 32px;
+}
+
+.address, .contact {
+  margin-bottom: 24px;
+}
+
+.address h4, .contact h4 {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #d1d5db;
+}
+
+.address p, .contact a {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: opacity 0.3s ease;
+}
+
+.socials a:hover img {
+  opacity: 0.7;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid #4b5563;
+  color: #9ca3af;
+  font-size: 14px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .features { grid-template-columns: 1fr; gap: 40px; padding: 40px 20px; }
+  .footer { padding: 40px 20px; }
+}

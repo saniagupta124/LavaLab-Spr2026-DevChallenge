@@ -1,0 +1,163 @@
+.hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SHOP ALL - centered */
+.textMain {
+    font-family: 'Teko', sans-serif;
+    font-size: 280px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: rgba(200, 200, 200, 0.4);
+    line-height: 1;
+    user-select: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* ADJUSTABLE — top left */
+.textTop {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    position: absolute;
+    top: 12%;
+    left: 28%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* SOFT PAD — bottom right */
+.textBottom {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 18%;
+    right: 22%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.shoeWrapper {
+    position: relative;
+    z-index: 2;
+}
+
+    .shoeWrapper.animating {
+        animation: slideInFromLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.shoeInner {
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
+
+.shoeImage {
+    height: 500px;
+    width: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4)) drop-shadow(30px 10px 25px rgba(0, 0, 0, 0.25));
+}
+
+.gradientFade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 1) 100%);
+    pointer-events: none;
+    z-index: 3;
+}
+
+.textFadeOut {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+.textFadeIn {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .textMain {
+        font-size: 120px;
+    }
+
+    .shoeImage {
+        height: 500px;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .textMain {
+        font-size: 80px;
+    }
+
+    .textTop, .textBottom {
+        font-size: 14px;
+    }
+
+    .shoeImage {
+        height: 500px;
+        width: auto;
+    }
+
+    .gradientFade {
+        height: 100px;
+    }
+}
